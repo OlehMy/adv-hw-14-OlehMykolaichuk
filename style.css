@@ -1,0 +1,56 @@
+body {
+    margin: 35vh auto;
+    background-color: black;
+    color: darksalmon;
+    font-family: 'Audiowide', sans-serif;
+    font-family: 'Fredericka the Great', sans-serif;
+}
+
+.buttons__wrapper {
+    position: absolute;
+    top: 12%;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 18px;
+    width: 135px;
+    height: 55px;
+    outline: none;
+    background-color: rgb(179, 67, 67);
+    border: 2px solid darksalmon;
+    border-radius: 5px;
+    -webkit-transition: background-color .2s linear, color .2s linear, box-shadow .3s ease-in-out;
+    transition: background-color .2s linear, color .2s linear, box-shadow .3s ease-in-out;
+}
+
+button:hover,
+button:disabled {
+    background-color: black;
+    color: rgb(179, 67, 67);
+    box-shadow: 0 0 10px 5px rgb(177, 179, 67);
+}
+
+.invisible {
+    display: none;
+}
+
+h1 {
+    font-size: 150px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 70px;
+    }
+}
