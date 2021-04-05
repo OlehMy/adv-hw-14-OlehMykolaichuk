@@ -1,33 +1,43 @@
+html {
+    font-size: 14px;
+}
+
 body {
-    margin: 35vh auto;
+    margin: 0 auto;
     background-color: black;
     color: darksalmon;
-    font-family: 'Audiowide', sans-serif;
+    font-size: 1rem;
     font-family: 'Fredericka the Great', sans-serif;
 }
 
-.buttons__wrapper {
-    position: absolute;
-    top: 12%;
-    left: calc(50% - 150px);
-    width: 300px;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    margin: 7vh auto 0;
+    min-width: fit-content;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 button {
-    margin: 20px;
+    margin: 1.43rem;
     cursor: pointer;
     font-family: 'Fredericka the Great', sans-serif;
-    font-size: 18px;
-    width: 135px;
-    height: 55px;
+    font-size: 1.29rem;
+    width: 9.29rem;
+    height: 3.57rem;
     outline: none;
     background-color: rgb(179, 67, 67);
     border: 2px solid darksalmon;
-    border-radius: 5px;
+    border-radius: 0.36rem;
     -webkit-transition: background-color .2s linear, color .2s linear, box-shadow .3s ease-in-out;
     transition: background-color .2s linear, color .2s linear, box-shadow .3s ease-in-out;
 }
@@ -39,18 +49,42 @@ button:disabled {
     box-shadow: 0 0 10px 5px rgb(177, 179, 67);
 }
 
-.invisible {
-    display: none;
+#id-number,
+#some-text {
+    margin: 1.43rem;
+    line-height: 3.57rem;
+    font-size: 1.71rem;
+    color: cyan;
+    text-align: center;
+    min-width: 5rem;
+    max-width: fit-content;
+    height: 3.57rem;
+    border: 2px solid darksalmon;
+    border-radius: 5px;
+}
+
+#font-size-up,
+#font-size-down {
+    width: 5rem;
+}
+
+#some-text {
+    width: fit-content;
+    height: fit-content;
+    min-height: 3.57rem;
+    font-size: 1rem;
+    padding: 0 0.71rem;
 }
 
 h1 {
-    font-size: 150px;
+    margin-top: 7vh;
+    font-size: 10.71rem;
     font-weight: 400;
     text-align: center;
 }
 
 @media (max-width: 576px) {
     h1 {
-        font-size: 70px;
+        font-size: 5rem;
     }
 }
